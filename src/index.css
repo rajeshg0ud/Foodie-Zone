@@ -415,6 +415,7 @@ body{
   margin-bottom: 10px;
   border-radius: 15px;
   font-size: 12px;
+  cursor: pointer;
 }
 
  .addToCartBttn:hover {
