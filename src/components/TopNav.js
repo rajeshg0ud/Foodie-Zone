@@ -38,7 +38,7 @@ const TopNav = () => {
       
       <Link className='link-btn' to="/cart">
       <button className='cart-btn'>
-        <BsFillCartFill size={20}/> Cart
+        <BsFillCartFill size={20}/>
       </button>
       </Link>
 

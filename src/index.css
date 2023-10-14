@@ -76,7 +76,7 @@ body{
   
   .cart-btn{
     display: flex;
-    font-size: 20px;
+    font-size: 19px;
     background-color: rgb(190, 0, 0);
     color: #f0f0f0;
     padding:5px 10px;
@@ -84,6 +84,9 @@ body{
     border-radius: 17px;
     margin-right: 50px;
     cursor: pointer;
+  }
+  .cart-btn::after{
+    content: "cart";
   }
   .link-btn{
     text-decoration: none;
@@ -507,6 +510,9 @@ body{
       font-size: 12.8px;
       margin-left: 8px;
     }
+    .cart-btn::after{
+      content: "";
+    }
     .search-section{
       padding: 2.5px;
       margin-right: 6px;
@@ -517,6 +523,9 @@ body{
     }
 
     /*top picks*/
+    .toppicks-main-title{
+      font-size: larger;
+    }
     .toppicks-title p {
       margin-left: -10px;
       margin-bottom: 10px; 
@@ -525,6 +534,14 @@ body{
       font-weight: bold;
       text-align:left;
     }
+    .toppicks-img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      transition: transform 0.3s ease-out;
+    }
+
+    
     /* slider */
     .slider-container{
       padding: 20px 0px;
@@ -538,14 +555,25 @@ body{
       display: flex;
       flex-direction: column;
       max-width: 600px;
-  
     }
     .delivery-img{
       max-height: 350px;
       max-width: 350px;
       margin: 0;
     }
-
+    .h1-center{
+      font-size: x-large;
+    }
+    .install-apk .get{
+      font-size: large;
+    }
+    .install-apk h2{
+      font-size: larger;
+      font-weight: bold;
+    }
+    .install-apk .description{
+      font-weight: 100;
+    }
     /*food*/
     .food-container {
       margin: auto;
