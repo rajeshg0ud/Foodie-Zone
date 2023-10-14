@@ -1,9 +1,14 @@
 import React from 'react';
 import { Data } from '../data';
 import { useState } from 'react';
+import { DataContext } from '../context/contextProvider';
+import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Food = () => {
+  const navigate= useNavigate();
   const [foods, setFoods]=useState(Data);
+  const {addToCart, cartItems}= useContext(DataContext);
 
   const filterCat=(category)=>{
     setFoods(Data.filter((item)=>{
@@ -30,7 +35,11 @@ const Food = () => {
               <p className='item-name'>{item.name}</p>
               <div className="item-container">
               <p className="price-text">{"₹"}{item.price}</p>
-              <a className='add-button'> ADD </a>
+              <div className='add-button' > 
+                {cartItems[item.id]===0 && <a className='addToCartBttn' onClick={()=>addToCart(item.id)}>{"ADD TO CART"}</a>}
+                {cartItems[item.id]>0 && <a className='addToCartBttn' onClick={()=> navigate("/cart")}>
+                  GO TO CART</a> }     
+            </div>
               </div>
             </div>
         ))}

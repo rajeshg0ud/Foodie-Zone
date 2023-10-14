@@ -22,6 +22,10 @@ body{
     cursor: pointer;
   }
   
+  .link-logo{
+      text-decoration: none;
+  }
+
     .logo {
       display: block;
     font-size: 22px;
@@ -29,6 +33,9 @@ body{
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     color: #333;
     padding-left: 10px;
+  }
+  .link-home-logo{
+    display: none;
   }
 
   .logo-red{
@@ -57,7 +64,8 @@ body{
     border: 0;
     font-size: medium;
     font: bold;
-    padding: 2px 77px 2px 0;
+    min-width: 150px;
+    max-width: 144px;
   }
   .search-input:focus{
     outline: none;
@@ -76,6 +84,9 @@ body{
     border-radius: 17px;
     margin-right: 50px;
     cursor: pointer;
+  }
+  .link-btn{
+    text-decoration: none;
   }
   .bg-black-60 {
     background-color: rgba(0, 0, 0, 0.6);
@@ -126,6 +137,7 @@ body{
   .menu-li{
     display: flex;
     margin: 12px -19px;
+    cursor: pointer;
   }
   .li-logo{
     margin:0 6px 0 0;
@@ -379,23 +391,27 @@ body{
   font-weight:bold;
 }
 
-.add-button {
-  font-size: 14px;
-  margin-right: 25px;
-  width: 27px;
-  height: 13px;
+.addToCartBttn{
+  position: absolute;
+  right: 10px;
+  bottom: 7px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  color: black;
+  min-width: 88px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 15px;
-  border: 3px solid #ccc;
-  padding:5px 12px 10px 6px;
-  color: white;
-  background-color: rgb(190, 0, 0);
+  font-size: 12px;
 }
-.add-button:hover{
-  margin-right: 24px;
-  width: 28.5px;
-  height: 14px;
-  padding: 6px 11px 9px 7px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+ .addToCartBttn:hover {
+  color:white;
+  background: black;
 }
 
   
@@ -413,9 +429,11 @@ body{
   
   .footer-heading {
     font-size: 24px;
-    color: rgb(190, 0, 0); /* Updated color value */
+    color: black; /* Updated color value */
   }
-  
+  .footer-headingRed{
+    color:rgb(190, 0, 0) ;
+  }
   .footer-description {
     margin-top: 10px;
     font-size: 14px;
@@ -435,33 +453,31 @@ body{
   }
   
   .footer-link:hover {
-    color: rgb(190, 0, 0); /* Updated hover color value */
+    color: rgb(190, 0, 0); 
   }
   
   .footer-social {
     display: flex;
     flex-direction: column;
   }
-  
-  .footer-social .footer-heading {
-    font-size: 24px;
-    color: rgb(190, 0, 0); /* Updated color value */
-  }
-  
+
+
   .social-icons {
     display: flex;
   }
   
-  .social-icon-link {
+ 
+  .linkedin, .youtube, .github, .instagram{
     margin-right: 10px;
     font-size: 20px;
     color: #333;
     text-decoration: none;
   }
   
-  .social-icon-link:hover {
-    color: rgb(190, 0, 0); /* Updated hover color value */
-  }
+.linkedin :hover {  color: #0077B5; } /* LinkedIn icon color */
+.instagram :hover{ color: #E4405F;  } /* Instagram icon color */
+.youtube  :hover{ color: #FF0000;  } /* YouTube icon color */
+.github  :hover{ color: #000000;  } 
   
   
     /*mobile version*/
@@ -472,12 +488,19 @@ body{
     .logo{
       display: none;
     }
+    .link-home-logo{
+      display: block;
+      margin: 0 15px 0 10px;
+      color: black;
+    }
+  
     .free-delivery{
         display: none;
     }
 
     .cart-btn{
       font-size: 12.8px;
+      margin-left: 8px;
     }
     .search-section{
       padding: 2.5px;
@@ -542,6 +565,10 @@ body{
     }
     .item-container{
       top:0px
+    }
+    .addToCartBttn{
+      font-size: 11px;
+      min-width: 73px;
     }
   }
 

@@ -6,7 +6,7 @@ export const DataContext= createContext(null);
 
 const getDefaultCart=()=>{
   let cart={};
-  for(let i=0; i<Data.length;i++)
+  for(let i=0; i<=Data.length;i++)
   {
     cart[i]=0;
   }
@@ -14,14 +14,14 @@ const getDefaultCart=()=>{
   return cart;
 }
 
-const contextProvider = () => {
+const ContextProvider = (props) => {
   const [cartItems, setCartItems]=useState(getDefaultCart);
 
     const getTotalCartAmount=()=>{
         let totalAmount=0;
-        for(let i=1;i<Data.length+1;i++){
+        for(let i=1;i<=Data.length;i++){
             if(cartItems[i]!==0){
-                let itemInfo= Data.find((Produc)=>Produc.id === Number(i));
+                let itemInfo= Data.find((item)=>item.id === Number(i));
                 totalAmount += cartItems[i]* itemInfo.price;
             }
         }
@@ -49,4 +49,4 @@ const contextProvider = () => {
     )
 }
 
-export default contextProvider;
+export default ContextProvider;

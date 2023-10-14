@@ -3,7 +3,9 @@ import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from 'react-icons/ai';
 import {BsFillCartFill, BsPerson} from 'react-icons/bs';
 import {TbTruckReturn} from 'react-icons/tb';
 import { FaCreditCard} from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 import {MdHelp, MdOutlineFavorite} from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 
 const TopNav = () => {
@@ -15,19 +17,30 @@ const TopNav = () => {
         <div className="menu-icon" onClick={()=>setSideNav(!sideNav)}>
           <AiOutlineMenu size={25} />
         </div>
+
+        <Link to="/" className="link-logo">
         <h1 className="logo">
           Foodie<span  className='logo-red'>Zone</span>
+          <FaHome size={25}/>
         </h1>
-        
+        </Link>
       </div>
+
+      <div>
+        <Link to="/">
+        < FaHome size={25} className='link-home-logo'/></Link>
+      </div>
+
       <div className="search-section">
         <AiOutlineSearch size={25} className="search-icon" />
         <input type='text' placeholder='Search for a dish' className="search-input" />
       </div>
       
+      <Link className='link-btn' to="/cart">
       <button className='cart-btn'>
         <BsFillCartFill size={20}/> Cart
       </button>
+      </Link>
 
       {
         sideNav? <div className='bg-black-60'  onClick={()=>setSideNav(!sideNav)}> </div>

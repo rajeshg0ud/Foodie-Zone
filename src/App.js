@@ -1,21 +1,22 @@
-import React from 'react'
+import React from 'react';import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import TopNav from './components/TopNav';
-import Featured from './components/Featured';
-import Delivery from './components/Delivery';
-import TopPicks from './components/TopPicks';
-import Food from './components/Food';
-import Footer from './components/Footer';
+import ContextProvider from './context/contextProvider';
 import './index.css'; 
+import Home from './pages/home/Home';
+import Cart from './pages/cart/cart';
 
 const App = () => {
   return (
     <div>
-      <TopNav />
-      <TopPicks />
-      <Featured />
-      <Food />
-      <Delivery />
-      <Footer />
+      <ContextProvider>
+        <Router>
+          <TopNav />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/cart' element={<Cart />}/>
+        </Routes>
+      </Router>
+      </ContextProvider>
     </div>
   )
 }
