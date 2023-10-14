@@ -10,8 +10,8 @@ const Footer = () => {
             Discover a world of flavors and indulge in delightful culinary experiences with FoodieZone.
           </p>
           <div className="footer-links">
-            <a href="/about" className="footer-link">About Us</a>
-            <a href="/contact" className="footer-link">Contact Us</a>
+            <a href="https://linktr.ee/tenacious_developer" target="_blank" className="footer-link">About Us</a>
+            <a href="https://www.instagram.com/tenacious_developer" target="_blank" className="footer-link">Contact Us</a>
             <a href="/terms" className="footer-link">Terms of Service</a>
           </div>
         </div>

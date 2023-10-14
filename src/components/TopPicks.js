@@ -11,7 +11,7 @@ const TopPicks = () => {
         <div className='toppicks-item-container'>
         <div className="free-delivery">
           <p className="free-logo">Free</p>
-           <p>Delivery</p>
+           <p >Delivery</p>
            <img  src={scooter} alt="sc"/>
         </div>
             <Splide options={{perPage:3, gap:"0.7rem", grag:"free", arrows:false}}>
