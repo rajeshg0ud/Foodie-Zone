@@ -27,6 +27,7 @@ const Food = () => {
           <button onClick={()=>filterCat("pizza")} className='menu-button'>Pizza</button>
           <button onClick={()=>filterCat("chicken")} className='menu-button'>Chicken</button>
           <button onClick={()=>filterCat("fish")} className='menu-button'>Fish</button>
+          <button onClick={()=>filterCat("beverage")} className='menu-button'>Beverage</button>
         </div>
       
       <div className='food-grid'>

@@ -232,7 +232,7 @@ export const Data = [
   }, {
     id: 34,
     name: 'Cocktail',
-    category: 'dessert',
+    category: 'beverage',
     image: 'https://cdn.pixabay.com/photo/2017/06/09/14/58/cocktail-2387063_1280.jpg',
     price: 180,  // Estimated price in INR
   },
