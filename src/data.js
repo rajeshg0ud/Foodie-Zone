@@ -225,7 +225,7 @@ export const Data = [
   },
   {
     id: 33,
-    name: 'Sole Fish Lemon Pepper',
+    name: 'Sole Fish Pepper',
     category: 'fish',
     image: 'https://cdn.pixabay.com/photo/2015/10/19/16/19/sole-996292_1280.jpg',
     price: 400,  // Estimated price for Sole Fish Lemon Pepper in INR
