@@ -11,6 +11,7 @@ const getDefaultCart=()=>{
     cart[i]=0;
   }
 
+
   return cart;
 }
 
@@ -21,9 +22,11 @@ const ContextProvider = (props) => {
         let totalAmount=0;
         for(let i=1;i<=Data.length;i++){
             if(cartItems[i]!==0){
-                let itemInfo= Data.find((item)=>item.id === Number(i));
-                totalAmount += cartItems[i]* itemInfo.price;
+                let itemInfo= Data.find((item)=>item.id===Number(i));
+                
+                totalAmount+= cartItems[i]* itemInfo.price;
             }
+            console.log(Data.length);
         }
         return totalAmount;
     }

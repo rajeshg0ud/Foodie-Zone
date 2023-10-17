@@ -132,4 +132,116 @@ export const Data = [
     image: 'https://res.cloudinary.com/ehizeex-shop/image/upload/v1672323737/NetflixApp/chiken_shawarma_c0ysna.jpg',
     price: 350,
   },
+  {
+    id: 20,
+    name: 'Chicken Kebabs',
+    category: 'chicken',
+    image: 'https://cdn.pixabay.com/photo/2018/03/03/19/37/spit-3196409_1280.jpg',
+    price: 300,  // Estimated price for Chicken Kebabs in INR
+  },
+  {
+    id: 21,
+    name: 'Grilled Chicken',
+    category: 'chicken',
+    image: 'https://cdn.pixabay.com/photo/2019/05/26/20/10/meat-4231141_1280.jpg',
+    price: 350,  // Estimated price for Grilled Chicken in INR
+  },
+  {
+    id: 22,
+    name: 'Veggie Burger with Fries',
+    category: 'burger',
+    image: 'https://cdn.pixabay.com/photo/2023/09/24/22/08/burger-8273883_1280.jpg',
+    price: 300,  // Estimated price in INR
+  },
+  {
+    id: 23,
+    name: 'Greek Salad',
+    category: 'salad',
+    image: 'https://cdn.pixabay.com/photo/2018/04/21/03/47/food-3337621_1280.jpg',
+    price: 200,  // Estimated price for Greek Salad in INR
+  },
+  {
+    id: 24,
+    name: 'Caesar Salad',
+    category: 'salad',
+    image: 'https://cdn.pixabay.com/photo/2014/01/17/08/56/caesar-246818_1280.jpg',
+    price: 250,  // Estimated price for Caesar Salad in INR
+  },
+  {
+    id: 25,
+    name: 'Cobb Salad',
+    category: 'salad',
+    image: 'https://cdn.pixabay.com/photo/2020/10/03/06/45/cobb-salad-5622724_1280.jpg',
+    price: 220,  // Estimated price for Cobb Salad in INR
+  },
+  {
+    id: 26,
+    name: 'Hawaiian Pizza',
+    category: 'pizza',
+    image: 'https://cdn.pixabay.com/photo/2020/08/19/14/43/pizza-5501075_1280.jpg',
+    price: 400,  // Estimated price for Hawaiian Pizza in INR
+  },
+  {
+    id: 27,
+    name: 'Fish Tacos',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2014/01/17/09/04/shrimp-246823_1280.jpg',
+    price: 350,  // Estimated price for Fish Tacos in INR
+  },
+  {
+    id: 28,
+    name: 'Fish and Chips',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2016/09/21/13/54/fish-1684828_1280.jpg',
+    price: 300,  // Estimated price for Fish and Chips in INR
+  },
+  {
+    id: 29,
+    name: 'Grilled Salmon',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2016/06/28/17/32/salmon-1485014_1280.jpg',
+    price: 400,  // Estimated price for Grilled Salmon in INR
+  },
+  {
+    id: 30,
+    name: 'Fish Fry',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2018/09/19/12/45/karimeen-3688474_1280.jpg',
+    price: 380,  // Estimated price for Fish Fry in INR
+  },
+  {
+    id: 31,
+    name: 'Fish Sea Bream Grill',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2017/06/02/17/37/fish-2366925_1280.jpg',
+    price: 450,  // Estimated price for Fish Sea Bream Grill in INR
+  },
+  {
+    id: 32,
+    name: 'Pink Fish',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2018/08/18/20/39/bream-3615462_1280.jpg',
+    price: 380,  // Estimated price for Pink Fish in INR
+  },
+  {
+    id: 33,
+    name: 'Sole Fish Lemon Pepper',
+    category: 'fish',
+    image: 'https://cdn.pixabay.com/photo/2015/10/19/16/19/sole-996292_1280.jpg',
+    price: 400,  // Estimated price for Sole Fish Lemon Pepper in INR
+  }, {
+    id: 34,
+    name: 'Cocktail',
+    category: 'dessert',
+    image: 'https://cdn.pixabay.com/photo/2017/06/09/14/58/cocktail-2387063_1280.jpg',
+    price: 180,  // Estimated price in INR
+  },
+  {
+    id: 35,
+    name: 'Iced Coffee',
+    category: 'beverage',
+    image: 'https://cdn.pixabay.com/photo/2017/07/27/17/19/ice-coffee-2546041_1280.jpg',
+    price: 150,  // Estimated price in INR
+  },
+ 
 ];
