@@ -604,5 +604,16 @@ body{
       font-size: 11px;
       min-width: 73px;
     }
+    .menu-filter{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .menu-button{
+      padding: 3px;
+      margin: 4.5px ;
+      font-size: 15px;
+    }
   }
+
 
