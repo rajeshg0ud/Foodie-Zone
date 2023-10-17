@@ -26,7 +26,7 @@ const Cart=()=>{
             {totalAmount>0?
             <div className="checkout">
                 <p >Subtotal: <span className='totalAmount'>₹{totalAmount}</span></p>
-                <button onClick={()=> navigate("/")}>Continue Shopping</button>
+                <button onClick={()=> navigate("/")}>Go back to Home</button>
                 <button>Checkout</button>
             </div>
             : <h1 className='cartEmpty'> Your Cart is Empty</h1>}
