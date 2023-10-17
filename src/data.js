@@ -179,7 +179,7 @@ export const Data = [
     name: 'Hawaiian Pizza',
     category: 'pizza',
     image: 'https://cdn.pixabay.com/photo/2020/08/19/14/43/pizza-5501075_1280.jpg',
-    price: 400,  // Estimated price for Hawaiian Pizza in INR
+    price: 200,  // Estimated price for Hawaiian Pizza in INR
   },
   {
     id: 27,
