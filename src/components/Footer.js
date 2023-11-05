@@ -28,7 +28,7 @@ const Footer = () => {
         <a href="https://www.youtube.com/@TenaciousDeveloper" target="_blank" className="youtube">
           <i className="fab fa-youtube"></i>
         </a>
-        <a href="https://www.linkedin.com/in/ rajesh-goud-budidi-631080241/" target="_blank" className="linkedin">
+        <a href="https://www.linkedin.com/in/rajeshg0ud/" target="_blank" className="linkedin">
           <i className="fab fa-linkedin"></i>
         </a>
 
